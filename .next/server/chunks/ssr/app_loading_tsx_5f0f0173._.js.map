@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/maila/Desktop/minimal-portfolio/app/loading.tsx"],"sourcesContent":["// components/Loading.tsx\r\n'use client'\r\nimport { motion } from 'framer-motion'\r\n\r\nexport default function Loading() {\r\n  return (\r\n    <div className=\"h-screen w-full flex items-center justify-center \">\r\n      <motion.div\r\n        className=\"w-16 h-16 rounded-full border-4 border-t-white border-b-white animate-spin\"\r\n        initial={{ opacity: 0, scale: 0.5 }}\r\n        animate={{ opacity: 1, scale: 1 }}\r\n        transition={{ duration: 0.4 }}\r\n      />\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":"AAAA,yBAAyB;;;;;AAEzB;AADA;;;AAGe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,0LAAA,CAAA,SAAM,CAAC,GAAG;YACT,WAAU;YACV,SAAS;gBAAE,SAAS;gBAAG,OAAO;YAAI;YAClC,SAAS;gBAAE,SAAS;gBAAG,OAAO;YAAE;YAChC,YAAY;gBAAE,UAAU;YAAI;;;;;;;;;;;AAIpC","debugId":null}}]
+}
