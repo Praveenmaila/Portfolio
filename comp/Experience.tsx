@@ -16,17 +16,17 @@ function Experince() {
       }
     const comp: pro[] = [
     {
-      name: "Accenture",
-      role: "Summer Intern",
-      des: "Interning at Accenture India",
-      time: "May 2025 - Present",
+      name: "Edunet Foundation",
+      role: "Mern Full Stack Developer Intern",
+      des: "Virtual",
+      time: "Nov 2024 - Jan 2025",
       img:acc
     },
     {
-      name: "TVS Sensing Solutions",
-      role: "Front-end Intern",
-      des: "Developed a responsive and user-friendly UI for the knowledge portal of the company",
-      time: "June 2024 - July 2024",
+      name: "Edunet Foundation",
+      role: "Data Analytics Intern",
+      des: "Virtual",
+      time: "Dec 2024 - Jan 2025",
       img:tvs
     }
   ];
