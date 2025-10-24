@@ -33,6 +33,7 @@ const Projects = ()=>{
     const child = {
         initial: {
             opacity: 0,
+            y: 10,
             filter: "blur(10px)"
         },
         animate: {
@@ -47,7 +48,7 @@ const Projects = ()=>{
     const Fullstack = [
         {
             name: "Music Player",
-            description: "Built a Spotify‑style MERN music app with secure user auth, playlists, and realtime audio streaming",
+            description: "Built a Spotify-style MERN music app with secure user auth, playlists, and realtime audio streaming.",
             techStack: [
                 "React",
                 "Node",
@@ -58,7 +59,7 @@ const Projects = ()=>{
         },
         {
             name: "Online Collaboration Tool",
-            description: "Developed a real-time team collaboration app with features like user authentication and Kanban boards",
+            description: "Developed a real-time team collaboration app with user authentication and Kanban boards.",
             techStack: [
                 "React",
                 "Node",
@@ -69,88 +70,68 @@ const Projects = ()=>{
         },
         {
             name: "Vegetable Disease Detection Using ML",
-            description: "Designed an ML system using Random Forest Classier to detect vegetable diseases.",
+            description: "Designed an ML system using Random Forest Classifier to detect vegetable diseases.",
             techStack: [
-                "stramlit",
-                "python"
+                "Streamlit",
+                "Python"
             ],
             link: "https://github.com/Praveenmaila/Vegetables-predict"
-        }
-    ];
-    const Frontend = [
-        {
-            name: "Eden",
-            description: "A modern component library with reusable Next.js components",
-            techStack: [
-                "Next.js",
-                "Tailwind",
-                "motion"
-            ],
-            link: "https://constellation-ecommerce.vercel.app/"
         },
         {
-            name: "RetrO ui",
-            description: "Retro themed component library made with Next.js",
+            name: "ResolveIT Smart Grievance & Feedback Management System",
+            description: "Developed a full-stack grievance and feedback management system with React, Spring Boot, and MySQL.",
             techStack: [
-                "Next.js",
-                "Tailwind",
-                "motion"
+                "React",
+                "Spring Boot",
+                "MySQL"
             ],
-            link: "https://retro0.vercel.app/"
+            link: "https://github.com/Praveenmaila/ResolveIT"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
         id: "projects",
-        className: "py-5 px-6 max-w-2xl justify-center items-center mx-auto flex flex-col md:mt-15 mt-13  ",
+        className: "py-12 px-6 max-w-6xl mx-auto flex flex-col justify-center items-center",
         variants: parent,
         initial: "initial",
         animate: "animate",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                className: "text-xl mb-5 justify-start flex w-full text-[#ffdb89]  font-medium tracking-tight font-sans",
+                className: "text-2xl sm:text-3xl mb-5 w-full text-[#ffdb89] font-medium tracking-tight font-sans text-center sm:text-left",
                 variants: child,
                 children: "Projects"
             }, void 0, false, {
                 fileName: "[project]/comp/Projects.tsx",
-                lineNumber: 87,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                className: "font-sans text-neutral-400 dark:text-neutral-400 mb-6 tracking-tight",
+                className: "font-sans text-neutral-500 dark:text-neutral-400 mb-10 text-center sm:text-left max-w-2xl",
                 variants: child,
-                children: "I enjoy building user centric applications. These include projects I made throughout my journey."
+                children: "I enjoy building user-centric applications. These include full-stack and frontend projects I’ve developed throughout my journey."
             }, void 0, false, {
                 fileName: "[project]/comp/Projects.tsx",
-                lineNumber: 93,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-9 md:justify-start justify-center items-center m-auto",
+                className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-center",
                 children: Fullstack.map((fullstack, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SpotlightCard, {
                         project: fullstack,
                         variants: child
                     }, index, false, {
                         fileName: "[project]/comp/Projects.tsx",
-                        lineNumber: 103,
+                        lineNumber: 95,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/comp/Projects.tsx",
-                lineNumber: 101,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "mt-10 text-center",
-                variants: child
-            }, void 0, false, {
-                fileName: "[project]/comp/Projects.tsx",
-                lineNumber: 107,
+                lineNumber: 93,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/comp/Projects.tsx",
-        lineNumber: 80,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 };
@@ -176,102 +157,95 @@ const SpotlightCard = ({ project, variants })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         onMouseMove: handleMouseMove,
         variants: variants,
-        className: "rounded-lg relative group overflow-hidden p-6 border dark:border-neutral-700 shadow-md bg-white dark:bg-neutral-900 transition-all duration-300 ease-in-out",
+        className: "rounded-2xl relative group overflow-hidden p-6 border dark:border-neutral-700 shadow-md bg-white dark:bg-neutral-900 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "pointer-events-none absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300",
                 style: {
-                    background: `radial-gradient(circle at var(--x) var(--y), rgba(99, 102, 241, 0.2), transparent 80%)`
+                    background: `radial-gradient(circle at var(--x) var(--y), rgba(99,102,241,0.2), transparent 80%)`
                 }
             }, void 0, false, {
                 fileName: "[project]/comp/Projects.tsx",
-                lineNumber: 132,
+                lineNumber: 122,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 md:w-60 md:h-60 h-60 w-70 px-2 py-2 flex flex-wrap items-center",
+                className: "relative z-10 h-full flex flex-col justify-between",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-between w-full",
+                        className: "flex items-center justify-between mb-3",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-lg font-medium font-sans text-black dark:text-white tracking-tight",
+                                className: "text-lg sm:text-xl font-medium font-sans text-black dark:text-white tracking-tight",
                                 children: project.name
                             }, void 0, false, {
                                 fileName: "[project]/comp/Projects.tsx",
-                                lineNumber: 140,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: project.link,
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    "aria-label": `Visit ${project.name}`,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "text-black dark:text-white cursor-pointer",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
-                                            size: 17
-                                        }, void 0, false, {
-                                            fileName: "[project]/comp/Projects.tsx",
-                                            lineNumber: 151,
-                                            columnNumber: 17
-                                        }, this)
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: project.link,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                "aria-label": `Visit ${project.name}`,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "text-black dark:text-white cursor-pointer hover:text-indigo-400 transition-colors",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
+                                        size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/comp/Projects.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/comp/Projects.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 139,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/comp/Projects.tsx",
-                                lineNumber: 143,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/comp/Projects.tsx",
-                        lineNumber: 139,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-black dark:text-neutral-500 mb-4",
+                        className: "text-sm sm:text-base text-black dark:text-neutral-400 mb-4",
                         children: project.description
                     }, void 0, false, {
                         fileName: "[project]/comp/Projects.tsx",
-                        lineNumber: 156,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-black dark:text-white flex flex-wrap gap-3",
+                        className: "flex flex-wrap gap-2 mt-auto",
                         children: project.techStack.map((tech, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-medium bg-neutral-800 dark:bg-neutral-700 text-sm text-neutral-300 dark:text-white py-1 px-2 rounded-lg",
+                                className: "font-medium bg-neutral-200 dark:bg-neutral-700 text-sm text-neutral-700 dark:text-white py-1 px-2 rounded-lg",
                                 children: tech
                             }, idx, false, {
                                 fileName: "[project]/comp/Projects.tsx",
-                                lineNumber: 161,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/comp/Projects.tsx",
-                        lineNumber: 159,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/comp/Projects.tsx",
-                lineNumber: 138,
+                lineNumber: 128,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/comp/Projects.tsx",
-        lineNumber: 127,
+        lineNumber: 117,
         columnNumber: 5
     }, this);
 };

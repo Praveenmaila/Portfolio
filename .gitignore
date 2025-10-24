@@ -1,2 +1,29 @@
 / node_modules
 node_modules
+/ dist
+# Dependency directories
+node_modules/
+
+# Next.js build output
+.next/
+out/ # If you are exporting a static build
+
+# Local environment variables
+.env.local
+.env.*.local # For specific local environments like .env.development.local
+
+# IDE-specific files (e.g., VS Code)
+.vscode/
+.DS_Store
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage reports
+coverage/
+
+# Misc
+.swc/ # SWC cache directory

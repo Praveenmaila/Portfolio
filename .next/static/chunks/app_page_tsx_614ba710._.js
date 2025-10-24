@@ -12,7 +12,7 @@
   "static/chunks/node_modules_framer-motion_dist_es_24e93cb0._.js",
   "static/chunks/node_modules_motion-dom_dist_es_fa3ea29e._.js",
   "static/chunks/node_modules_motion-utils_dist_es_881f2f6e._.js",
-  "static/chunks/comp_398b23fb._.js"
+  "static/chunks/comp_c77888ec._.js"
 ],
     source: "dynamic"
 });

@@ -27,7 +27,7 @@ const Projects = () => {
   };
 
   const child = {
-    initial: { opacity: 0, filter: "blur(10px)" },
+    initial: { opacity: 0, y: 10, filter: "blur(10px)" },
     animate: {
       opacity: 1,
       y: 0,
@@ -40,71 +40,61 @@ const Projects = () => {
     {
       name: "Music Player",
       description:
-        "Built a Spotify‑style MERN music app with secure user auth, playlists, and realtime audio streaming",
+        "Built a Spotify-style MERN music app with secure user auth, playlists, and realtime audio streaming.",
       techStack: ["React", "Node", "MongoDB", "Express"],
       link: "https://github.com/Praveenmaila/week-3-",
     },
     {
       name: "Online Collaboration Tool",
       description:
-        "Developed a real-time team collaboration app with features like user authentication and Kanban boards",
+        "Developed a real-time team collaboration app with user authentication and Kanban boards.",
       techStack: ["React", "Node", "MongoDB", "Express"],
       link: "https://github.com/Praveenmaila/Online-Collaboration-Tool",
     },
     {
       name: "Vegetable Disease Detection Using ML",
       description:
-        "Designed an ML system using Random Forest Classier to detect vegetable diseases.",
-      techStack: ["stramlit", "python"],
+        "Designed an ML system using Random Forest Classifier to detect vegetable diseases.",
+      techStack: ["Streamlit", "Python"],
       link: "https://github.com/Praveenmaila/Vegetables-predict",
     },
-  ];
-
-  const Frontend: Project[] = [
     {
-      name: "Eden",
+      name: "ResolveIT Smart Grievance & Feedback Management System",
       description:
-        "A modern component library with reusable Next.js components",
-      techStack: ["Next.js", "Tailwind", "motion"],
-      link: "https://constellation-ecommerce.vercel.app/",
-    },
-    {
-      name: "RetrO ui",
-      description: "Retro themed component library made with Next.js",
-      techStack: ["Next.js", "Tailwind", "motion"],
-      link: "https://retro0.vercel.app/",
+        "Developed a full-stack grievance and feedback management system with React, Spring Boot, and MySQL.",
+      techStack: ["React", "Spring Boot", "MySQL"],
+      link: "https://github.com/Praveenmaila/ResolveIT",
     },
   ];
 
   return (
     <motion.section
       id="projects"
-      className="py-5 px-6 max-w-2xl justify-center items-center mx-auto flex flex-col md:mt-15 mt-13  "
+      className="py-12 px-6 max-w-6xl mx-auto flex flex-col justify-center items-center"
       variants={parent}
       initial="initial"
       animate="animate"
     >
       <motion.h2
-        className="text-xl mb-5 justify-start flex w-full text-[#ffdb89]  font-medium tracking-tight font-sans"
+        className="text-2xl sm:text-3xl mb-5 w-full text-[#ffdb89] font-medium tracking-tight font-sans text-center sm:text-left"
         variants={child}
       >
         Projects
       </motion.h2>
+
       <motion.p
-        className="font-sans text-neutral-400 dark:text-neutral-400 mb-6 tracking-tight"
+        className="font-sans text-neutral-500 dark:text-neutral-400 mb-10 text-center sm:text-left max-w-2xl"
         variants={child}
       >
-        I enjoy building user centric applications. These include projects I
-        made throughout my journey.
+        I enjoy building user-centric applications. These include full-stack and
+        frontend projects I’ve developed throughout my journey.
       </motion.p>
 
-      <div className="flex flex-wrap sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-9 md:justify-start justify-center items-center m-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-center">
         {Fullstack.map((fullstack, index) => (
           <SpotlightCard key={index} project={fullstack} variants={child} />
         ))}
       </div>
-
-      <motion.div className="mt-10 text-center" variants={child}></motion.div>
     </motion.section>
   );
 };
@@ -127,40 +117,40 @@ const SpotlightCard = ({ project, variants }: SpotlightCardProps) => {
     <motion.div
       onMouseMove={handleMouseMove}
       variants={variants}
-      className="rounded-lg relative group overflow-hidden p-6 border dark:border-neutral-700 shadow-md bg-white dark:bg-neutral-900 transition-all duration-300 ease-in-out"
+      className="rounded-2xl relative group overflow-hidden p-6 border dark:border-neutral-700 shadow-md bg-white dark:bg-neutral-900 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
     >
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         style={{
-          background: `radial-gradient(circle at var(--x) var(--y), rgba(99, 102, 241, 0.2), transparent 80%)`,
+          background: `radial-gradient(circle at var(--x) var(--y), rgba(99,102,241,0.2), transparent 80%)`,
         }}
       />
-      <div className="relative z-10 md:w-60 md:h-60 h-60 w-70 px-2 py-2 flex flex-wrap items-center">
-        <div className="flex items-center justify-between w-full">
-          <h3 className="text-lg font-medium font-sans text-black dark:text-white tracking-tight">
+      <div className="relative z-10 h-full flex flex-col justify-between">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-lg sm:text-xl font-medium font-sans text-black dark:text-white tracking-tight">
             {project.name}
           </h3>
-          <div className="flex gap-3">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Visit ${project.name}`}
-            >
-              <button className="text-black dark:text-white cursor-pointer">
-                <Link size={17} />
-              </button>
-            </a>
-          </div>
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Visit ${project.name}`}
+          >
+            <button className="text-black dark:text-white cursor-pointer hover:text-indigo-400 transition-colors">
+              <Link size={18} />
+            </button>
+          </a>
         </div>
-        <p className="text-black dark:text-neutral-500 mb-4">
+
+        <p className="text-sm sm:text-base text-black dark:text-neutral-400 mb-4">
           {project.description}
         </p>
-        <div className="text-black dark:text-white flex flex-wrap gap-3">
+
+        <div className="flex flex-wrap gap-2 mt-auto">
           {project.techStack.map((tech, idx) => (
             <span
               key={idx}
-              className="font-medium bg-neutral-800 dark:bg-neutral-700 text-sm text-neutral-300 dark:text-white py-1 px-2 rounded-lg"
+              className="font-medium bg-neutral-200 dark:bg-neutral-700 text-sm text-neutral-700 dark:text-white py-1 px-2 rounded-lg"
             >
               {tech}
             </span>
