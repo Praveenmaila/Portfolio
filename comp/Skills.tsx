@@ -6,6 +6,11 @@ import {
   FaNodeJs,
   FaJava,
   FaDatabase,
+  FaGitAlt,
+  FaDocker,
+  FaPython,
+  
+  
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -14,7 +19,9 @@ import {
   SiTypescript,
   SiMongodb,
   SiMysql,
-  SiCplusplus,
+  SiPostgresql,
+  SiSpringboot,
+  
 } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 
@@ -22,7 +29,7 @@ function Skills() {
   const list = [
     { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-400" /> },
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
     { name: "CSS", icon: <FaCss3Alt className="text-blue-400" /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-300" /> },
@@ -32,12 +39,26 @@ function Skills() {
   const listb = [
     { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
     { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+    { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-500" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+    { name: "Spring Boot", icon: <SiSpringboot className="text-white" /> },
+
   ];
 
   const listl = [
     { name: "Java", icon: <FaJava className="text-red-500" /> },
+    { name: "SQL", icon: <FaDatabase className="text-yellow-200" /> },
+    { name: "OOPS", icon: <FaJava className="text-white" /> },
+    { name:"git", icon:<FaGitAlt className="text-orange-500" />},
+    { name:"Docker", icon:<FaDocker className="text-blue-500" />},
+    {name: "Python", icon: <FaPython className="text-yellow-300" /> }
 
+    
+  ];
+
+  const listc = [
+    { name: "git", icon: <FaGitAlt className="text-orange-500" /> },
+    { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
     { name: "SQL", icon: <FaDatabase className="text-yellow-200" /> },
     { name: "OOPS", icon: <FaJava className="text-white" /> },
     { name: "Javascript", icon: <DiJavascript1 className="text-white" /> },

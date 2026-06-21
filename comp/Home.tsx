@@ -13,7 +13,7 @@ function Home() {
   const Links = [
     {
       name: "Resume",
-      url: "https://drive.google.com/file/d/1qVAJpPI8BBsIPvEPqwRKxol2ve4ij1Hz/view?usp=drivesdk",
+      url: "https://drive.google.com/file/d/1wSJVEyaU_k86pSq34PiRNrvMV28MpToK/view?usp=drivesdk",
       icon: <GiPapers />,
     },
     {
@@ -75,15 +75,13 @@ function Home() {
             {" "}
             Praveen maila
             <p className="font-sans tracking-tight text-sm text-neutral-300 ">
-              Aspiring full stack web developer
+               Full Stack Developer | AI & Software Engineering Enthusiast
             </p>
           </div>
         </div>
 
         <div className="max-w-2xl px-4 text-md text-neutral-300 font-sans leading-relaxed">
-          Final-year engineering student at Teegala Krishna Reddy Engineering
-          College, specializing in Computer Science ,Profficiant in MERN-stack
-          development with a strong grasp of Java DSA concepts.
+          Aspiring Software Engineer passionate about building scalable applications, AI-powered solutions, and intelligent systems. Strong foundation in Java, Spring Boot, Data Structures & Algorithms, and modern software development practices.
         </div>
 
         <div className="flex flex-wrap gap-2 items-center justify-center py-5 px-4">

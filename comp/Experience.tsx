@@ -19,7 +19,7 @@ function Experince() {
       name: "Infosys Springboard",
       role: "java Developer Intern",
       des: "Developed a full-stack Smart Grievance System using React, Spring Boot, and MySQL, gaining hands-on experience in end-to-end development",
-      time: "Aug 2025 - Present",
+      time: "Oct 2025 - Dec 2025",
       img: infosys,
     },
     {

@@ -58,6 +58,22 @@ const Projects = () => {
       techStack: ["Streamlit", "Python"],
       link: "https://github.com/Praveenmaila/Vegetables-predict",
     },
+          {
+      name: "Redrob AI Candidate Ranking System",
+      description:
+        "Built an AI-powered candidate ranking platform that uses semantic search, embeddings, feature engineering, and intelligent scoring to rank candidates beyond keyword matching. Processes large candidate datasets and generates top-ranked candidate recommendations.",
+      techStack: ["Python", "Next.js", "Machine Learning", "Hugging Face"],
+      link: "https://github.com/Praveenmaila/Redrob-AI-Candidate-Ranking-System",
+    },
+    {
+  name: "GST Invoice Generator",
+  description:
+    "Developed a professional GST-compliant invoice generator with automatic CGST, SGST, and IGST calculations, PDF export, responsive design, and real-time invoice preview.",
+  techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+
+  link: "https://gst-invoice-generator-sigma.vercel.app/",
+},
+
     {
       name: "ResolveIT Smart Grievance & Feedback Management System",
       description:

@@ -5,6 +5,7 @@ import Skills from "@/comp/Skills";
 import Container from '../comp/container'
 
 
+
 export default function Homef() {
   return (
     <div>
